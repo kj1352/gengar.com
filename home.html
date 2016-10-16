@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+     <title>WTF Revolution</title>
+</head>
+<div class="tohide">
+
+       
+
+<div id="head">
+    <strong>GENGAR.com</strong>
+</div>
+
+
+
+<div class="card-container">
+  
+  <div class="pokemon-container">
+    
+    <div class="power-level">
+      CP<span>514</span>
+      <div class="pokemon-snap">
+        <img src="http://i63.tinypic.com/hug9ck.png" />
+      </div> <!-- pokemon-snap -->
+      <div class="half-circle"></div>
+    </div> <!-- power-level -->
+    
+    <div class="poke-card">
+      
+      <div class="name">
+        <h1>Gengar</h1>
+        <div class="hp">
+          HP 66/66
+        </div>
+      </div>
+      
+      <ul class="stats">
+        <li>Ghost / Poison<br /><span>Type</span></li>
+        <li>40.5kg<br /><span>Weight</span></li>
+        <li>1.5m<br /><span>Height</span></li>
+      </ul>
+      
+      <div class="info">
+        
+        <div class="dusty-candy">
+          <div class="dust">
+            <i></i> 10514<br />
+            <span>Stardust</span>
+          </div>
+          <div class="candy">
+            <i></i> 50<br />
+            <span>Gengar Candy</span>
+          </div>
+        </div>
+        
+        <div class="power-up">
+            <div class="button" id="login">Login</div>
+          <span><button class="button" id="myblog">MyBlog</button></span>
+        </div>
+        
+      </div>  <!-- info -->
+
+      <div class="transfer">
+        <button class="button">Torrent</button>
+        <button class="button">About</button>
+      </div>
+      
+    </div> <!-- poke-card -->
+  </div> <!-- pokemon-container -->
+</div> <!-- card-container -->
+</div> <!-- card-container -->
+</div> <!-- card-container -->
+
+
+
+
+</div>
+
+
+<fieldset class="mymodal">
+    <form class="lgn">
+     <input type="text" name="user" placeholder="Username">
+	 <input type="password" name="pass" placeholder="Password"><br>
+	 <input type="submit" name="login" class="login loginmodal-submit" value="Login"><br>
+	 <a href="">Register</a>
+	</form>
+</fieldset>
+
+
+<script src="jquery-1.8.0.min.js"></script>
+<script src="home.js"></script>
+
+
+<script>   
+
+    $(document).ready(function(){
+       $("#login").click(function(){
+         $(".tohide").css("filter","blur(5px)");
+           $(".mymodal").show(300);
+           $(".mymodal").css("zIndex","3");
+           
+       });
+    });
+    
+</script>
+
+
+</html>
